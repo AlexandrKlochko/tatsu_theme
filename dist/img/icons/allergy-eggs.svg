@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 11</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00---Tatsu---Interactions-&amp;-Changes" transform="translate(-151.000000, -901.000000)">
+            <g id="Group-20-Copy" transform="translate(151.000000, 781.000000)">
+                <g id="Group-11" transform="translate(0.000000, 120.000000)">
+                    <rect id="Rectangle-Copy-9" x="0" y="0" width="40" height="40"></rect>
+                    <g filter="url(#filter-1)" id="noun_eggs_2526718-copy">
+                        <g transform="translate(12.000000, 14.000000)">
+                            <path d="M11.2941176,12.4705882 C8.59788071,12.4705882 6.58823529,10.1851092 6.58823529,7.29411765 C6.58823529,4.13644682 8.92048729,0 11.2941176,0 C13.6489358,0 16,4.21417153 16,7.29411765 C16,10.1074932 13.9573247,12.4705882 11.2941176,12.4705882 Z M6.77325718,11.0183838 C5.17585482,11.8526242 3.11126235,11.5486306 1.85180776,10.0476711 C0.122270118,7.98648871 -0.726419294,3.91788471 0.832393647,2.60988541 C2.00636776,1.624804 4.51585294,2.28409765 6.42913153,3.56317482 C5.93732118,4.759676 5.64705882,6.06210847 5.64705882,7.29411765 C5.64705882,8.70376776 6.06102165,9.99171788 6.77325718,11.0183838 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

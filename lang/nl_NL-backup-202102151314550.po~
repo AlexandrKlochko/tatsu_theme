@@ -1,0 +1,252 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tatsu Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-15 13:12+0000\n"
+"PO-Revision-Date: 2021-02-15 13:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
+"Language: nl_NL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.6.1\n"
+"X-Domain: tatsu_theme"
+
+#. Name of the template
+msgid "404"
+msgstr ""
+
+#. Name of the template
+msgid "About Page"
+msgstr ""
+
+#: footer.php:13
+msgid "About Tatsu"
+msgstr ""
+
+#: single-restaurants.php:7
+msgid "About Tatsu Restaurant"
+msgstr ""
+
+#: tpl-parts/tpl-modal.php:52
+msgid "Accept all cookies"
+msgstr ""
+
+#: inc/theme-cpt.php:15 inc/theme-cpt.php:53
+msgid "Add New"
+msgstr ""
+
+#: inc/theme-cpt.php:52
+msgid "Add New Job"
+msgstr ""
+
+#: inc/theme-cpt.php:14
+msgid "Add New Restaurant"
+msgstr ""
+
+#: single-restaurants.php:25
+msgid "Address"
+msgstr ""
+
+#: inc/theme-cpt.php:50
+msgid "All Jobs"
+msgstr ""
+
+#: inc/theme-cpt.php:12
+msgid "All Restaurants"
+msgstr ""
+
+#: single-job.php:38
+msgid "Apply now"
+msgstr ""
+
+#: page-templates/page-menu.php:55
+msgid "Best seller"
+msgstr ""
+
+#: header.php:36 page-templates/page-menu.php:27
+msgid "Book a table"
+msgstr ""
+
+#: single-restaurants.php:51
+msgid "Contact"
+msgstr ""
+
+#: tpl-parts/tpl-modal.php:6
+msgid "Cookies"
+msgstr ""
+
+#: single-job.php:10
+msgid "Download PDF"
+msgstr ""
+
+#: inc/theme-cpt.php:54
+msgid "Edit Job"
+msgstr ""
+
+#: inc/theme-cpt.php:16
+msgid "Edit Restaurant"
+msgstr ""
+
+#: footer.php:46
+msgid "Follow"
+msgstr ""
+
+#: inc/theme-setup.php:22
+msgid "Footer About - Menu"
+msgstr ""
+
+#: inc/theme-setup.php:23
+msgid "Footer Follow - Menu"
+msgstr ""
+
+#: page-templates/page-404.php:10
+msgid "Go to homepage"
+msgstr ""
+
+#: inc/theme-setup.php:21
+msgid "Home page - Menu"
+msgstr ""
+
+#: inc/theme-cpt.php:43
+msgid "job"
+msgstr ""
+
+#: inc/theme-cpt.php:48
+msgid "Jobs"
+msgstr ""
+
+#: inc/theme-setup.php:20
+msgid "Main - Menu"
+msgstr ""
+
+#: tpl-parts/tpl-modal.php:20
+msgid "Marketing"
+msgstr ""
+
+#: tpl-parts/tpl-modal.php:42
+msgid "Necessary"
+msgstr ""
+
+#: inc/theme-cpt.php:19 inc/theme-cpt.php:57
+msgid "Not Found"
+msgstr ""
+
+#: inc/theme-cpt.php:20 inc/theme-cpt.php:58
+msgid "Not found in Trash"
+msgstr ""
+
+#: single-restaurants.php:31
+msgid "Opening days"
+msgstr ""
+
+#: single-restaurants.php:41
+msgid "Opening time"
+msgstr ""
+
+#. Name of the template
+msgid "Page Menu"
+msgstr ""
+
+#: page-templates/page-404.php:8
+msgid "Page not found"
+msgstr ""
+
+#: inc/theme-cpt.php:49
+msgid "Parent Job"
+msgstr ""
+
+#: inc/theme-cpt.php:11
+msgid "Parent Restaurant"
+msgstr ""
+
+#: tpl-parts/tpl-modal.php:31
+msgid "Performance"
+msgstr ""
+
+#: inc/theme-cpt.php:46
+msgctxt "Post Type General Name"
+msgid "Jobs"
+msgstr ""
+
+#: inc/theme-cpt.php:8
+msgctxt "Post Type General Name"
+msgid "Restaurants"
+msgstr ""
+
+#: inc/theme-cpt.php:47
+msgctxt "Post Type Singular Name"
+msgid "Job"
+msgstr ""
+
+#: inc/theme-cpt.php:9
+msgctxt "Post Type Singular Name"
+msgid "Restaurant"
+msgstr ""
+
+#: footer.php:65
+msgid "Privacy policy"
+msgstr ""
+
+#: footer.php:26 inc/theme-cpt.php:10
+msgid "Restaurants"
+msgstr ""
+
+#: inc/theme-cpt.php:5
+msgid "restaurants"
+msgstr ""
+
+#: inc/theme-cpt.php:56
+msgid "Search Jobs"
+msgstr ""
+
+#: inc/theme-cpt.php:18
+msgid "Search Restaurants"
+msgstr ""
+
+#: tpl-parts/tpl-modal.php:13
+msgid "See less"
+msgstr ""
+
+#: tpl-parts/tpl-modal.php:12
+msgid "See more"
+msgstr ""
+
+#: archive-restaurants.php:6
+msgid "Select a restaurant"
+msgstr ""
+
+#: page-templates/page-menu.php:25 page-templates/page-menu.php:34
+msgid "Share the menu"
+msgstr ""
+
+#. Name of the theme
+msgid "Tatsu Theme"
+msgstr ""
+
+#: footer.php:70
+msgid "Terms & Conditions"
+msgstr "Terms and Conditions"
+
+#: inc/theme-cpt.php:55
+msgid "Update Job"
+msgstr ""
+
+#: inc/theme-cpt.php:17
+msgid "Update Restaurant"
+msgstr ""
+
+#: inc/theme-cpt.php:51
+msgid "View Job"
+msgstr ""
+
+#: inc/theme-cpt.php:13
+msgid "View Restaurant"
+msgstr ""
+
+#. Author of the theme
+msgid "WHA"
+msgstr ""

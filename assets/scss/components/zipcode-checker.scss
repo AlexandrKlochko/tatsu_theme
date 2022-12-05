@@ -1,0 +1,119 @@
+.zipcode-checker {
+  border: 1px solid #343434;
+  border-radius: 4px;
+  background-color: #161819;
+  padding: 48px;
+  position: relative;
+  &__caption {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $white;
+  }
+  &__form {
+    display: flex;
+    margin: 30px 0 0;
+  }
+  &__field {
+    flex: 1;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #979797;
+    padding: 0 20px;
+    font-size: 14px;
+    height: 47px;
+    color: $white;
+    background-position: center right 16px;
+    background-repeat: no-repeat;
+    transition: $transition;
+    &.error {
+      border-color: $error;
+      color: $error;
+      background-image: url('../img/icons/field-sign-error.svg');
+    }
+  }
+  .btn-arrow {
+    min-height: 47px;
+    border-radius: 0;
+    flex: 0 0 205px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  &__result {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: #161819;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: $transition;
+    &.is-opened {
+      opacity: 1;
+      pointer-events: all;
+    }
+    &-title {
+      font-family: $font-crimson;
+      font-size: 40px;
+      line-height: 1;
+      color: $white;
+    }
+    &-text {
+      margin-top: 28px;
+      a {
+        display: inline-block;
+        color: $grey;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: .56px;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+  @include media($phablet) {
+    padding: 20px 16px 18px;
+    &__form {
+      display: block;
+    }
+    &__field {
+      background-color: #0c0c0c;
+      width: 100%;
+    }
+    &__result {
+      &:before {
+        content: '';
+        display: block;
+        margin: 0 auto 12px;
+        width: 44px;
+        height: 44px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &[data-result="yes"]:before {
+        background-image: url('../img/icons/zipcode-yes.svg');
+      }
+      &[data-result="no"]:before {
+        background-image: url('../img/icons/zipcode-no.svg');
+      }
+      &-title {
+        font-size: 34px;
+      }
+    }
+    .btn-arrow {
+      min-width: 100%;
+      margin-top: 32px;
+      border-radius: 4px;
+    }
+  }
+}

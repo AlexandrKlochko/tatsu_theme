@@ -1,0 +1,8 @@
+<svg width="15" height="15" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#000000" stroke-width="0.6">
+        <g transform="rotate(45) translate(5.5,-4)">
+            <line x1="0" y1="4.37446726" x2="8.74893451" y2="4.37446726"/>
+            <line x1="4.485" y1="7.09405867e-14" x2="4.485" y2="8.74893451"/>
+        </g>
+    </g>
+</svg>

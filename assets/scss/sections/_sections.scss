@@ -1,0 +1,37 @@
+.page-section {
+  padding-top: 138px;
+  &:first-child {
+    padding-top: 86px;
+  }
+  @include media($tablet) {
+    margin-top: 80px;
+    &:first-child {
+      margin-top: 40px;
+    }
+  }
+}
+
+.section-title {
+  font-family: $font-crimson;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: .9;
+  margin: 0;
+  color: $white;
+}
+
+.section-subtitle {
+  font-family: $font-crimson;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: .9;
+  margin: 0;
+  @include media($tablet) {
+    font-size: 40px;
+    color: $white;
+  }
+}
+
+@import 'section-hero';
+@import 'section-404';
+@import 'woocommerce';

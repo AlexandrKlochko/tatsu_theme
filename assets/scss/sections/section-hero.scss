@@ -1,0 +1,264 @@
+
+.section-hero {
+  --desktop-background: url('../img/del/bg-hero.png');
+  --tablet-background: url('../img/del/bg-hero-tablet.png');
+  --mobile-background: url('../img/del/bg-hero-mobile.png');
+  min-height: 100vh;
+  /*min-height: 800px;*/
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  //background: var( --desktop-background) no-repeat center / cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include media($phone) {
+    padding-top: 350px;
+  }
+  .section-hero-content{
+    display: flex;
+    flex-direction: column-reverse;
+    @include media($phone) {
+      flex-direction: column;
+    }
+  }
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: flex-end;
+    z-index: 1;
+    position: relative;
+
+    @include media($phone) {
+      padding: 0;
+    }
+  }
+
+  .front-page-carousel{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    @include media($phone){
+      height: 400px;
+      z-index: 1;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0,0,0,.5),transparent);
+      opacity: 1;
+      transition: $transition;
+      will-change: opacity;
+    }
+    *{
+      height: 100%;
+    }
+    .hero-carousel__logo{
+      display: none;
+
+      @include media($phone){
+        display: block;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: auto;
+        min-height: 180px;
+        z-index: 1;
+      }
+    }
+    .animated {
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    }
+    .owl-item{
+      &>div{
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .front-page-carousel-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    &.wrap {
+      @include media($phone) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+    .owl-carousel-counter{
+      font-size: 20px;
+
+      @include media($phone) {
+        margin-right: 10px;
+      }
+    }
+    .owl-buttons {
+      display: flex;
+      & > div {
+        border-radius: 0;
+        font-size: 20px;
+        padding: 15px;
+        background-color: #353534;
+        color: #b2a9a3;
+        margin: 0;
+        line-height: 1em;
+        &:last-child{
+          background-color: #b2a9a3;
+          color:#353534;
+        }
+      }
+    }
+  }
+  @include media($tablet) {
+    background-image: var( --tablet-background);
+    .wrap {
+      justify-content: center;
+    }
+  }
+  @include media($phone) {
+    background-image: var( --mobile-background);
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    left: -905px;
+    top: 203px;
+    width: 1000px;
+    height: 100%;
+    background-image: var(--pattern-color);
+    background-repeat: no-repeat repeat;
+    background-size: 100%;
+    z-index: 1;
+
+    @include media($tablet) {
+      display: none;
+    }
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    top: 203px;
+    left:50%;
+    /*right: -295px;*/
+    min-width: 975px;
+    width: 52%;
+    height: 100%;
+    background-image: var(--pattern-color);
+    background-repeat: no-repeat repeat;
+    background-size: 100%;
+    z-index: 0;
+
+  }
+}
+
+.hero-plate {
+  width: 100%;
+  max-width: 477px;
+  background-color: $light;
+  color: $dark;
+  padding: 78px 70px;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: $cubic-bezier;
+  z-index: 1;
+  @include media($phone) {
+    max-width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &.is-in-view {
+    transform: scaleY(1);
+    .hero-plate__logo,
+    .hero-plate__excerpt,
+    .hero-plate__links {
+      opacity: 1;
+    }
+  }
+  &__logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition: $cubic-bezier;
+    will-change: opacity;
+    transition-delay: .7s !important;
+
+    @include media($phone) {
+      display: none;
+    }
+  }
+  &__excerpt {
+    margin-top: 58px;
+    opacity: 0;
+    transition: $cubic-bezier;
+    will-change: opacity;
+    transition-delay: .8s;
+    p {
+      margin: 0;
+    }
+  }
+  &__links {
+    margin: 58px 0 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    transition: $cubic-bezier;
+    will-change: opacity;
+    transition-delay: .9s;
+    li:not(:last-child) {
+      margin-bottom: 17px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: $font-crimson;
+      font-size: 28px;
+      line-height: 1;
+      color: $black;
+      opacity: .75;
+      &:hover {
+        opacity: 1;
+        [data-arrow-line] {
+          stroke-dashoffset: 0;
+        }
+      }
+      svg {
+        margin-top: 5px;
+      }
+      [data-arrow-line] {
+        stroke-dasharray: 57;
+        stroke-dashoffset: 41;
+        transition: $cubic-bezier;
+      }
+    }
+  }
+  @include media($phablet) {
+    padding: 60px 50px 50px;
+    &__logo {
+      max-width: 220px;
+    }
+    &__excerpt {
+      margin-top: 32px;
+    }
+    &__links {
+      margin-top: 24px;
+    }
+  }
+}

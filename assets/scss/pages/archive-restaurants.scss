@@ -1,0 +1,118 @@
+.restaurants-grid {
+  border-top: 1px solid #343434;
+  border-left: 1px solid #343434;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0;
+  margin-top: 36px;
+  &__card {
+    border-bottom: 1px solid #343434;
+    border-right: 1px solid #343434;
+    min-height: 307px;
+    background-color: $dark;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+    padding: 0 60px 31px 30px;
+    transition: $transition;
+    &:hover {
+      background-color: $light;
+      color: $dark;
+      & > svg {
+        opacity: 1;
+      }
+      .restaurants-grid__card-img,&:after{
+        opacity: 0;
+      }
+      .restaurants-grid__card-title a {
+        color: $dark;
+      }
+      .restaurants-grid__card-address {
+        color: rgba($dark, .5);
+      }
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black, .75);
+      opacity: 1;
+      transition: $transition;
+      will-change: opacity;
+    }
+    &-title {
+      font-family: $font-crimson;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1;
+      color: $light;
+      margin: 0 0 20px;
+      a:after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-excerpt {
+      p {
+        margin: 0;
+      }
+    }
+    &-address {
+      font-style: normal;
+      color: $grey;
+      font-size: 12px;
+      line-height: 1.35;
+      text-transform: uppercase;
+      padding-right: 10px;
+      margin-top: 36px;
+      transition: $transition;
+    }
+    &-img {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      margin-left: 0;
+      margin-bottom: 0;
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 1;
+      transition: $transition;
+      will-change: opacity;
+    }
+    & > svg {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+      bottom: 35px;
+      right: 32px;
+      opacity: 0;
+      transition: $transition;
+      [data-arrow-line] {
+        stroke-dasharray: 57;
+        stroke-dashoffset: 41;
+      }
+    }
+  }
+  @include media($phone) {
+    &__card {
+      padding: 0 26px 32px;
+    }
+  }
+}

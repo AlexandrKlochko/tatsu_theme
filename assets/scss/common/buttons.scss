@@ -1,0 +1,47 @@
+.small-btn {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+  border: 1px solid $white;
+  border-radius: 4px;
+  padding: 5px 9px 4px;
+  &:hover {
+    background-color: $white;
+    color: $dark;
+  }
+}
+
+.btn-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  height: 44px;
+  background-color: $white;
+  padding: 0 16px;
+  color: $dark;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .56px;
+  border: 0;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    color: $dark;
+    [data-arrow-line] {
+      stroke-dashoffset: 0;
+    }
+  }
+  [data-arrow-line] {
+    stroke-dasharray: 57;
+    stroke-dashoffset: 41;
+    transition: $cubic-bezier;
+  }
+  &--dark {
+    background-color: $dark;
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}

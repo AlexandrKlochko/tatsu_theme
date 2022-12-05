@@ -1,0 +1,82 @@
+.modal-auth {
+  position: absolute;
+  z-index: 2;
+  top: -30px;
+  right: 75px;
+  width: 100%;
+  max-width: 540px;
+  background-color: $white;
+  padding: 45px 32px 35px;
+  color: $dark;
+  display: none;
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 1.2;
+    font-family: $font-crimson;
+  }
+  &__link {
+    display: inline-block;
+    color: $dark;
+    font-size: 15px;
+    white-space: nowrap;
+    opacity: .5;
+    &:hover {
+      color: $dark;
+      opacity: 1;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 12px;
+      margin-left: 16px;
+      background: url('../img/icons/arrow-right-dark.svg') no-repeat center / contain;
+    }
+  }
+  &__close {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 19px;
+    right: 19px;
+    width: 17px;
+    height: 17px;
+    background: url('../img/icons/close-bold.svg') no-repeat center / contain;
+  }
+  form {
+    margin-top: 35px;
+    .default-input {
+      margin-bottom: 8px;
+    }
+    .submit-btn {
+      margin-top: 15px;
+    }
+  }
+  @include media($laptop-small) {
+    right: 45px;
+  }
+  @include media($tablet) {
+    top: 0;
+    right: 20px;
+  }
+  @include media($phone) {
+    right: 0;
+    max-width: 100%;
+    padding: 80px 24px 32px;
+    form {
+      margin-top: 25px;
+    }
+    &__link span {
+      display: none;
+    }
+    &__close {
+      display: inline-block;
+    }
+  }
+}

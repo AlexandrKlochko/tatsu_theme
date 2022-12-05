@@ -1,0 +1,52 @@
+#modal-menu {
+  .modal-content {
+    background: $white;
+
+    .menu-link {
+      a {
+        color: rgba($black, .5);
+        padding: 10px 30px;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14px;
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($black, .1);
+      }
+    }
+
+    .need-share-button-default {
+      width: 100%;
+      display: none;
+      @include media($phone) {
+        display: block;
+      }
+
+      .need-share-button_button {
+        width: 100%;
+        padding: 10px 30px;
+        border: none;
+        opacity: 0.5;
+        font-weight: 500;
+        letter-spacing: unset;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      .need-share-button_dropdown {
+
+        top: 40px;
+        right: unset;
+        left: -15px;
+        margin-right: 0;
+      }
+    }
+  }
+}

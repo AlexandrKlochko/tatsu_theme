@@ -1,0 +1,376 @@
+body.cabinet .socials-list svg {
+  [fill]:not([fill="none"]) {
+    fill: $dark;
+  }
+  [stroke]:not([stroke="none"]) {
+    stroke: $dark;
+  }
+}
+
+.socials-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a {
+    display: inline-block;
+    will-change: opacity;
+    &:hover {
+      opacity: .77;
+    }
+  }
+}
+
+.default-link {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: .56px;
+  color: $grey;
+  &:hover {
+    color: $white;
+  }
+}
+
+.arrow-link {
+  display: inline-block;
+  color: $dark;
+  font-size: 15px;
+  white-space: nowrap;
+  opacity: .5;
+  &:hover {
+    color: $dark;
+    opacity: 1;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 12px;
+    margin-left: 16px;
+    background: url('../img/icons/arrow-right-dark.svg') no-repeat center / contain;
+  }
+}
+
+.grey-link {
+  display: inline-block;
+  font-size: 15px;
+  color: $dark;
+  opacity: .5;
+  &:hover {
+    color: $dark;
+    opacity: 1;
+  }
+}
+
+.bordered-link {
+  display: inline-block;
+  font-size: 12px;
+  color: rgba(#4a4a4a, .5) !important;
+  border-bottom: 1px solid;
+  &:hover {
+    color: #4a4a4a !important;
+  }
+}
+
+.default-input {
+  position: relative;
+  border: 1px solid #D9D9D9;
+  height: 54px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  transition: $transition;
+  &:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 22px;
+    top: calc(50% - 5px);
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &.is-focused {
+    input {
+      margin-top: auto;
+    }
+    label {
+      font-size: 9px;
+      opacity: .6;
+      top: 10px;
+    }
+  }
+  &.error {
+    border-color: $error;
+    &:after {
+      background-image: url('../img/icons/field-sign-error.svg');
+    }
+  }
+  &.valid:after {
+    background-image: url('../img/icons/field-sign-valid.svg');
+  }
+  input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 0 0 2px;
+    border: 0;
+    font-size: 13px;
+    line-height: normal;
+  }
+  label {
+    font-size: 13px;
+    line-height: 1;
+    color: #313131;
+    display: block;
+    position: absolute;
+    left: 14px;
+    top: calc(50% - 7px);
+    pointer-events: none;
+    transition: $transition;
+    will-change: opacity, transform, font-size;
+  }
+}
+
+.default-checkbox {
+  position: relative;
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    &:checked + label {
+      &:before {
+        border-color: $dark;
+      }
+      &:after {
+        opacity: 1;
+      }
+    }
+    &.error + label {
+      &:before {
+        border-color: $error;
+      }
+    }
+  }
+  label {
+    display: block;
+    position: relative;
+    font-size: 12px;
+    color: #4a4a4a;
+    padding-left: 29px;
+    cursor: pointer;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      transition: $transition;
+    }
+    &:before {
+      border: 1px solid #D9D9D9;
+      top: 2px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+    }
+    &:after {
+      top: 5px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      background-color: $dark;
+      opacity: 0;
+    }
+  }
+}
+
+.default-radio {
+  position: relative;
+  input[type="radio"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    &:checked + label {
+      &:before {
+        border-color: $dark;
+      }
+      &:after {
+        opacity: 1;
+      }
+      .default-radio__tooltip {
+        display: block;
+      }
+    }
+    &.error + label {
+      &:before {
+        border-color: $error;
+      }
+    }
+  }
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    padding-left: 45px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba($black, .75);
+    cursor: pointer;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      transition: $transition;
+    }
+    &:before {
+      width: 16px;
+      height: 16px;
+      border: 1px solid #979797;
+      top: 5px;
+      left: 0;
+    }
+    &:after {
+      width: 10px;
+      height: 10px;
+      background-color: $dark;
+      top: 8px;
+      left: 3px;
+      opacity: 0;
+    }
+    img {
+      margin-left: 16px;
+    }
+  }
+  &__tooltip {
+    min-width: calc(100% + 45px);
+    background-color: #e5e5e5;
+    padding: 13px 16px;
+    font-size: 11px;
+    color: rgba($black, .75);
+    margin: 13px 0 0 -45px;
+    position: relative;
+    display: none;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 9px 9px 9px;
+      border-color: transparent transparent #e5e5e5 transparent;
+      bottom: 100%;
+      left: 0;
+    }
+  }
+}
+
+.default-select {
+  position: relative;
+  z-index: 1;
+  font-size: 13px;
+  color: #313131;
+  &.is-opened &__current:after {
+    transform: scaleY(-1);
+  }
+  &.is-opened &__dropdown {
+    transform: scaleY(1);
+  }
+  &__current {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 54px;
+    border: 1px solid #D9D9D9;
+    padding: 0 14px;
+    cursor: pointer;
+    background-color: $white;
+    &:after {
+      content: '';
+      position: absolute;
+      right: 24px;
+      top: calc(50% - 3px);
+      width: 10px;
+      height: 6px;
+      background: url('../img/icons/carret-select.svg') no-repeat center / contain;
+      transition: $transition;
+    }
+  }
+  &__dropdown {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    border-top: 0;
+    background-color: $white;
+    box-shadow: 0 8px 17px -9px rgba($black, .5);
+    transform-origin: top;
+    transform: scaleY(0);
+    will-change: transform;
+    transition: $transition;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 54px;
+      padding: 0 14px;
+      cursor: pointer;
+      transition: $transition;
+      &:hover {
+        color: $dark;
+      }
+      &:not(:first-child) {
+        border-top: 1px solid #D9D9D9;
+      }
+    }
+  }
+  input.error + .default-select__current {
+    border-color: $error;
+  }
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 16px;
+  border: 1px solid $dark;
+  height: 44px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .56px;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    background-color: $dark;
+    color: $white !important;
+    [stroke] {
+      stroke: $white;
+    }
+  }
+  [stroke] {
+    transition: $transition;
+  }
+  [data-arrow-line] {
+    stroke-dasharray: 57;
+    stroke-dashoffset: 41;
+  }
+}

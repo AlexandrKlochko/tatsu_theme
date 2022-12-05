@@ -1,0 +1,16 @@
+.woocommerce form, .woocommerce-page form {
+  .show-password-input {
+    top:unset;
+  }
+}
+.basket-item__price{
+  .modal-basket__close{
+    position: relative;
+    opacity: 0.3;
+    margin: 8px 0 8px auto;
+    top: unset;
+    right: unset;
+    display: block;
+    font-size: 0;
+  }
+}

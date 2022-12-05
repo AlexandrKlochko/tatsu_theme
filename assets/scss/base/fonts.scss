@@ -1,0 +1,8 @@
+/* HKGrotesk Font */
+@include font-face('HKGrotesk', '../fonts/HKGrotesk/HKGrotesk-Regular', 400, normal);
+@include font-face('HKGrotesk', '../fonts/HKGrotesk/HKGrotesk-Italic', 400, italic);
+@include font-face('HKGrotesk', '../fonts/HKGrotesk/HKGrotesk-Bold', 700, normal);
+@include font-face('HKGrotesk', '../fonts/HKGrotesk/HKGrotesk-BoldItalic', 700, italic);
+
+/* CrimsonText Font */
+@include font-face('CrimsonText', '../fonts/CrimsonText/CrimsonText-Regular', 400, normal);

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 21</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01---Tatsu---Homepage" transform="translate(-1214.000000, -28.000000)">
+            <g id="Group-21" transform="translate(1214.000000, 28.000000)">
+                <rect id="Rectangle" opacity="0.5" x="0" y="0" width="40" height="40" rx="20"></rect>
+                <g filter="url(#filter-1)" id="Profile" stroke-linecap="round" stroke-linejoin="round">
+                    <g transform="translate(12.000000, 11.000000)">
+                        <path d="M16.06,16.83526 C16.06,12.40051 12.46475,8.80526 8.03,8.80526 C3.59525,8.80526 0,12.40051 0,16.83526 L16.06,16.83526 Z" id="Stroke-6288-Copy" stroke="#000000"></path>
+                        <path d="M11.68,3.65 C11.68,5.66553 10.04553,7.3 8.03,7.3 C6.01447,7.3 4.38,5.66553 4.38,3.65 C4.38,1.63447 6.01447,0 8.03,0 C10.04553,0 11.68,1.63447 11.68,3.65 Z" id="Stroke-6289-Copy" stroke="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

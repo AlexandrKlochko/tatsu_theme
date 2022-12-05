@@ -1,0 +1,40 @@
+.footer-cabinet {
+  background-color: #f2f0ef;
+  font-size: 15px;
+  margin-top: auto;
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 136px;
+  }
+  a {
+    display: inline-block;
+    color: $grey-dark !important;
+    &:hover {
+      color: $dark !important;
+    }
+  }
+  .copyright {
+    color: $grey-dark;
+    font-size: 15px;
+  }
+  .lang-selector__current {
+    color: $grey-dark;
+    &:after {
+      filter: invert(1);
+    }
+  }
+  @include media($tablet) {
+    .wrap {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: center;
+      height: 96px;
+    }
+    [data-link],
+    .lang-selector {
+      display: none;
+    }
+  }
+}

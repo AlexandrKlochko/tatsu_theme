@@ -1,0 +1,124 @@
+.gallery-grid {
+  margin-top: 24px;
+
+  .menu-card {
+    border-bottom: 0;
+    border-right: 0;
+    min-height: 565px;
+
+    &:before,
+    &__img {
+      opacity: 1;
+    }
+  }
+
+  @include media($tablet) {
+    .menu-card {
+      min-height: 454px;
+    }
+  }
+  @include media($phone) {
+    .menu-card {
+      border-top: 0;
+      border-left: 0;
+    }
+  }
+}
+
+.gallery-card {
+  width: calc(25% - 36px);
+  margin-bottom: 48px;
+  opacity: 0;
+  transform: translateY(45px);
+  transition: $cubic-bezier;
+
+  &.is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &--width2 {
+    width: calc(50% - 22px);
+  }
+
+  & > img:not([class]) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include media($tablet) {
+    width: calc(50% - 24px);
+    &--width2 {
+      width: 100%;
+    }
+  }
+  @include media($phone) {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+.page-template-page-gallery .insta-gallery-list .insta-gallery-item {
+  .insta-gallery-item-wrap{
+    position: relative;
+  }
+  .insta-gallery-icon.qligg-icon-instagram{
+    opacity: 0!important;
+
+  }
+
+  .insta-gallery-image-card {
+    transition: all .3s ease-in-out;
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    padding: 30px!important;
+    opacity: 0;
+    z-index: 11;
+    .insta-gallery-image-card-info{
+      color: #ffffff;
+      font-family: "HK Grotesk";
+      font-size: 16px!important;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .ig-card-caption{
+opacity: 1;
+      color: #ffffff;
+
+      font-size: 16px!important;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 16.55px;
+    }
+
+  }
+
+  &:hover {
+    .insta-gallery-image-card {
+      opacity: 1;
+    }
+  }
+
+
+}
+@media (min-width: 1024px) {
+  .restaurants-template-default.single{
+    #quandoo-booking-widget{
+      height: 900px;
+      //overflow-y:auto
+      iframe{
+        height: 900px!important;
+      }
+    }
+    .restaurant-info{
+      margin-bottom: 228px!important;
+    }
+    footer.footer{
+      margin-top: 0;
+    }
+  }
+
+}

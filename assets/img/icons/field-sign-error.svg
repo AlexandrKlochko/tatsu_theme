@@ -1,0 +1,6 @@
+<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+    <g stroke-linecap="round" transform="translate(-1, 5.25) rotate(-45)">
+        <line x1="0" y1="4.28697791" x2="8.57395582" y2="4.28697791" stroke="#FFB357"/>
+        <line x1="4.3953" y1="6.9521775e-14" x2="4.3953" y2="8.57395582" stroke="#FFB357"/>
+    </g>
+</svg>

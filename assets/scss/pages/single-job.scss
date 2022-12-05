@@ -1,0 +1,42 @@
+.job-details {
+  width: 100%;
+  max-width: 205px;
+  margin: 200px 90px 0 auto;
+  position: sticky;
+  top: 80px;
+  &__part {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    &[data-title]:before {
+      content: attr(data-title);
+      display: block;
+      font-size: 16px;
+      line-height: 1;
+      color: $white;
+    }
+  }
+  .default-link {
+    &:not([href*="mailto:"]) {
+      color: $white;
+    }
+    &[href*="mailto:"] {
+      font-size: 12px;
+    }
+  }
+  .socials-list {
+    margin-top: 6px;
+    a {
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  @include media($tablet) {
+    position: relative;
+    top: 0;
+    margin: 0;
+  }
+}

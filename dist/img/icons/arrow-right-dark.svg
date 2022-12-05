@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-4" transform="translate(-1260.000000, -70.000000)" filter="url(#filter-1)">
+            <g transform="translate(1261.000000, 71.000000)">
+                <line x1="16" y1="5.56521739" x2="9.94189859e-05" y2="5.50881351" id="Stroke-6998" stroke="#FFFFFF"></line>
+                <line x1="10.4347826" y1="0" x2="16" y2="5.56521739" id="Stroke-6999" stroke="#FFFFFF"></line>
+                <line x1="16" y1="5.56521739" x2="10.4347826" y2="11.1304348" id="Stroke-7000" stroke="#FFFFFF"></line>
+            </g>
+        </g>
+    </g>
+</svg>

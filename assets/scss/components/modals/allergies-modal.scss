@@ -1,0 +1,27 @@
+#modal-allergies {
+  .modal__close{
+    top:16px;
+    right: 16px;
+    svg{
+      g{
+        stroke:$white;
+      }
+    }
+  }
+  .modal-content {
+    padding-top: 20px;
+    background: #17181a;
+    border: 1px solid #1f2022;
+    border-radius: 5px;
+    .allergies-list{
+      width: 770px;
+      border: none;
+      padding: 35px;
+      margin:0;
+      ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+      }
+    }
+  }
+}

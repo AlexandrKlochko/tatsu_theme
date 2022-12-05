@@ -1,0 +1,199 @@
+.cookie-modal {
+  width: 100%;
+  max-width: 776px;
+  background-color: $white;
+  border-radius: 4px;
+  padding: 36px 56px 40px;
+  position: relative;
+
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: right;
+  }
+
+  &__excerpt {
+    max-width: 400px;
+    padding-right: 13px;
+    text-align: left;
+
+    p {
+      margin: 0;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__toggle {
+    padding: 0 0 2px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    white-space: nowrap;
+    margin-bottom: 16px;
+    font-size: 10px;
+    color: rgba($dark, .5);
+    border-bottom: 1px solid;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+
+  &__body {
+    display: none;
+    margin: 52px -56px 0;
+    border-bottom: 1px solid #EFEFEF;
+  }
+
+  &__item {
+    border-top: 1px solid #EFEFEF;
+    padding: 44px 56px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &-checkbox {
+      flex: 1;
+    }
+
+    &-excerpt {
+      flex: 1;
+
+      p {
+        margin: 0 0 20px;
+      }
+
+      & > *:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 32px;
+  }
+
+  .btn-arrow {
+    display: inline-flex;
+    min-width: 290px;
+    cursor: pointer;
+  }
+
+  .modal__close {
+    top: 42px;
+    right: 52px;
+  }
+
+  @include media($tablet) {
+    padding: 76px 16px 16px;
+    &__head {
+      display: block;
+    }
+    &__excerpt {
+      max-width: 100%;
+    }
+    &__toggle {
+      margin-bottom: 0;
+      margin-top: 16px;
+    }
+    &__body {
+      margin: 24px -16px 0;
+      border-bottom: 0;
+    }
+    &__item {
+      padding: 32px 16px 40px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    &__footer {
+      border-top: 1px solid #EFEFEF;
+      padding: 16px 16px 0;
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+    .btn-arrow {
+      min-width: 100%;
+    }
+    .modal__close {
+      top: 16px;
+      right: 16px;
+    }
+  }
+  @include media($phone) {
+    &__item {
+      display: block;
+
+      &-checkbox {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .default-checkbox {
+    position: relative;
+
+    input {
+      width: 0;
+      height: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+
+      &:checked + label {
+        &:before {
+          background-color: $black;
+        }
+
+        &:after {
+          background-image: url('../img/icons/checkbox-checked.svg');
+          left: 40px;
+        }
+      }
+    }
+
+    label {
+      display: block;
+      position: relative;
+      font-family: $font-crimson;
+      font-size: 17px;
+      line-height: 1.05;
+      color: rgba($black, .68);
+      padding-left: 91px;
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        width: 60px;
+        height: 22px;
+        border-radius: 22px;
+        background-color: #c0c0c0;
+        position: absolute;
+        top: -2px;
+        left: 0;
+        box-shadow: 0 10px 20px rgba($black, .2);
+        transition: $transition;
+      }
+
+      &:after {
+        content: '';
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: url('../img/icons/checkbox-unchecked.svg') no-repeat center $white;
+        position: absolute;
+        top: 0;
+        left: 2px;
+        transition: $cubic-bezier;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<svg width="10" height="6" viewBox="0 0 10 6" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="#313131" transform="translate(1, 5) rotate(-90)" opacity="0.6" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="8" x2="0" y2="4"/>
+        <line x1="0" y1="4" x2="4" y2="0"/>
+    </g>
+</svg>

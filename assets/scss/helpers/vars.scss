@@ -1,0 +1,48 @@
+/* Main Colors */
+$white: #FFF;
+$black: #000;
+
+$dark: #131517;
+$light: #BCB3AC;
+$grey: rgba($white, .5);
+$grey-dark: rgba($black, .5);
+
+$error: #FFB357;
+
+/* Socials Colors */
+$color-facebook: #1674EA;
+$color-messenger: #00B2FF;
+$color-telegram: #179CDE;
+$color-linkedin: #2867B2;
+$color-twitter: #29C5F6;
+$color-google: #DD4B39;
+$color-instagram: #E1306C;
+$color-youtube: #FF0000;
+$color-viber: #7360F2;
+$color-pinterest: #E60023;
+$color-tiktok: #4BE1EC;
+$color-reddit: #FF4500;
+$color-pocket: #EF4056;
+$color-rss: #EA6221;
+
+/* Fonts */
+$font-grotesk: HKGrotesk, Helvetica, Arial, sans-serif;
+$font-crimson: CrimsonText, Georgia, 'Times New Roman', sans;
+
+/* Transitions */
+$transition: all .175s ease-in-out;
+$cubic-bezier: all .6s cubic-bezier(0.68, 0, 0.265, 1);
+
+/* Breakpoints */
+$desktop: 1650;
+$desktop-middle: 1599;
+$desktop-small: 1439;
+$laptop: 1365;
+$laptop-middle: 1279;
+$laptop-small: 1199;
+$tablet: 992;
+$phablet: 767;
+$phone: 575;
+$phone-medium: 414;
+$phone-small: 374;
+$phone-oldest: 359;
